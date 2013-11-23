@@ -30,6 +30,9 @@
         <p class="byline">Published on <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}</span></span>.</p>
       </footer>
     </div><!-- /.article-wrap -->
+
+    {% include disqus.html %}
+
   </article>
 </div><!-- /#main -->
 
